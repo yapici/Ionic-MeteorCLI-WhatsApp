@@ -50,7 +50,7 @@ And for the controller the logic is simple, we ask the user to check again his p
 
 Note that we didn't provide all the settings for `account-phone`, so it will run in debug mode. It means that a real SMS won't be sent now, but if you'd like to receive the verification code just open your terminal and view `Meteor`'s logs.
 
-Our next step would be preventing unauthorized users from viewing contents which they have no permission to. In order to do that we will add a pre-requirement to the relevant routes which will require the user to log-in first. `angular-meteor-auth` provides us with a service which is called `$auth`, and it has a method called `$awaitUser()` which returns a promise that will be resolved only once the user has logged in. For more information about `angular-meteor-auth` see [reference](http://www.angular-meteor.com/api/1.3.6/auth).
+Our next step would be preventing unauthorized users from viewing contents which they have no permission to. In order to do that we will add a pre-requirement to the relevant routes which will require the user to log-in first. `angular-meteor-auth` provides us with a service which is called `$auth`, and it has a method called `$awaitUser()` which returns a promise that will be resolved only once the user has logged in. For more information about `angular-meteor-auth` see [reference](/api/angular-meteor/1.3.6/auth).
 
 {{{diff_step 4.9}}}
 
